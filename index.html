@@ -12,13 +12,13 @@
     <div class="container">
         <h2>Please fill this survey form</h2>
         <form id="surveyForm">
-            <label>First Name: <input type="text" id="firstName" placeholder="Enter your first name"></label>
-            <label>MI: <input type="text" id="middleInitial" size="2" placeholder="Write N/A if none"></label>
-            <label>Last Name: <input type="text" id="lastName" placeholder="Enter your last name"></label>
+            <label>First Name: <input type="text" id="firstName" placeholder="Enter your first name" required></label>
+            <label>MI: <input type="text" id="middleInitial" size="2" placeholder="Write N/A if none" required></label>
+            <label>Last Name: <input type="text" id="lastName" placeholder="Enter your last name" required></label>
             <br><br>
-            <label>City: <input type="text" id="city" placeholder="Enter your city "></label>
-            <label>State: <input type="text" id="state" placeholder="Enter your state or province"></label>
-            <label>Zip Code: <input type="text" id="zipCode" placeholder="Enter your zip code, ex. 9000"></label>
+            <label>City: <input type="text" id="city" placeholder="Enter your city " required></label>
+            <label>State: <input type="text" id="state" placeholder="Enter your state or province" required></label>
+            <label>Zip Code: <input type="text" id="zipCode" placeholder="Enter your zip code, ex. 9000" required></label>
             <br><br>
             
             <p>Choose a Sport:</p>
@@ -45,7 +45,7 @@
             <textarea id="comments" placeholder="Please let us know your comments"></textarea>
             <br><br>
 
-            <button type="button" onclick="submitForm()">Send it</button>
+            <button type="submit" onclick="submitForm()">Send it</button>
             <button type="reset">Clear it</button>
         </form>
     </div>
